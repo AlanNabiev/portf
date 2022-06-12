@@ -43,7 +43,7 @@ function WebContent() {
         <Experience />
       </InView>
 
-      <InView threshold={0.75} as="span" onChange={(inView) => changeLink('contact',inView)}>
+      <InView threshold={0.5} as="span" onChange={(inView) => changeLink('contact',inView)}>
         <Contact />
       </InView>
 

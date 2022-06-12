@@ -1,376 +1,128 @@
-.qualifications-outer-container {
+.qualifications-container {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   min-height: 100vh;
   margin-top: 100px;
-  padding: 50px;
-  overflow-x: hidden;
-  backdrop-filter: blur(20px);
+  min-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
 }
 
+.qualifications-box h2{
+  padding-top: 100px;
+  margin-bottom: -240px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+}
+.qualifications-box{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.qualifications-container div{
+  display: flex;
+  column-gap: 12px;
+}
+.qualifications-container-item{
+  background: rgba(255, 255, 255, 0.103);
+  border-radius: 20px;
+  height: 350px;
+  width: 200px;
+  padding-top: 50px;
+  margin-top: 140px;
+}
+.qualifications-container-item p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+.js {
+  background: url(../props/js.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+.node {
+  background: url(../props/node.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+
+}
+.vue {
+  background: url(../props/vue.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
+.react {
+  background: url(../props/react.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
+.angular {
+  background: url(../props/angular.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
+.solidity {
+  background: url(../props/sol.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
+.w3 {
+  background: url(../props/w3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
+.ethers {
+  background: url(../props/ethers.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
 @media (max-width: 820px) {
-  .qualifications-outer-container {
-    position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 100px;
-    padding: 15px;
-    overflow-x: hidden;
-    backdrop-filter: blur(20px);
-  }
-  .quali-text {
-    font-size: 30px;
-    top: 10px;
-    text-align: center;
-  }
+  .qualifications-container-item{
+  background: rgba(255, 255, 255, 0.103);
+  border-radius: 20px;
+  margin-top: 180px;
 
-  .qualifications-container {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 80%;
-    width: 98%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin-top: 15px;
-  }
-
-  .qualifications-container .qualification {
-    position: relative;
-    height: 80%;
-    min-width: 95%;
-    background-color: rgb(9, 6, 31);
-    border-radius: 20px;
-    margin: 0 30px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .qualifications-container .qualification .content {
-    height: 85%;
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .qualifications-container .qualification h1 {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-weight: 200;
-  }
+}
 }
 
 @media (max-width: 500px) {
-  .qualifications-outer-container {
-    position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 100px;
-    padding: 20px;
-    overflow-x: hidden;
-    backdrop-filter: blur(20px);
+  .qualifications-container{
+  padding-bottom: 0;
+  min-height: 0;
+  padding-bottom: 20px;
+  margin-bottom: 350px;
   }
-  .quali-text {
-    font-size: 20px;
-    top: 10px;
-    text-align: center;
-  }
-
-  .qualifications-container {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start ;
-    align-items: center;
-    height: 80%;
-    width: 85%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin-top: 15px;
-  }
-
-  .qualifications-container .qualification {
-    position: relative;
-    height: 80%;
-    min-width: 95%;
-    background-color: rgb(9, 6, 31);
-    border-radius: 20px;
-    margin: 0 40px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .qualifications-container .qualification .content {
-    height: 85%;
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .qualifications-container .qualification h1 {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-weight: 200;
-  }
+  .qualifications-box h2{
+  padding-top: 180px;
+  margin-bottom: -280px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
 }
+  .qualifications-container-item{
+  margin-top: 160px;
+  background: rgba(255, 255, 255, 0.103);
 
-@media (max-width: 400px) {
-  .qualifications-outer-container {
-    position: relative;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin-top: 100px;
-    padding: 30px 10px 0;
-    overflow-x: hidden;
-    backdrop-filter: blur(20px);
-  }
-  .quali-text {
-    font-size: 20px;
-    top: 10px;
-    position: absolute;
-    left: 10px;
-  }
-
-  .qualifications-container {
-    position: absolute;
-    left: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 80%;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-
-  .qualifications-container .qualification {
-    position: relative;
-    height: 80%;
-    min-width: 90%;
-    background-color: rgb(9, 6, 31);
-    border-radius: 20px;
-    margin: 0 20px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .qualifications-container .qualification .content {
-    height: 85%;
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .qualifications-container .qualification h1 {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-weight: 200;
-  }
 }
-.quali-text {
-  font-size: 20px;
-  top: 10px;
 }
-
-.qualifications-container {
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 80%;
-  width: 90%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-top: 15px;
-  user-select: none;
+.slick-dots li.slick-active button:before {
+    color:White !important;
+    font-size: 12px;
 }
-
-.qualifications-container .qualification {
-  position: relative;
-  height: 550px;
-  min-width: 40%;
-  background-color: rgb(9, 6, 31);
-  border-radius: 20px;
-  margin: 0 20px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.qualifications-container .qualification .content {
-  height: 85%;
-  width: 90%;
-  border-radius: 15px;
-  margin-top: 20px;
-  background-size: contain;
-  background-position: center;
-}
-
-.qualifications-container .qualification h1 {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-.qualifications-container .qualification .content.html {
-  background: rgba(255, 255, 255, 0.103) url(../props/js.png);
-  background-position: center;
-}
-.qualifications-container .qualification .content.css {
-  background: rgba(255, 255, 255, 0.103) url(../props/node.png);
-  background-position: center;
-  background-size: cover;
-}
-.qualifications-container .qualification .content.javascript {
-  background: rgba(255, 255, 255, 0.103) url(../props/vue.png);
-  background-position: center;
-  background-size: cover;
-}
-.qualifications-container .qualification .content.bootstrap {
-  background: rgba(255, 255, 255, 0.103) url(../props/react.png);
-  background-position: center;
-  background-size: cover;
-}
-.qualifications-container .qualification .content.react {
-  background: rgba(255, 255, 255, 0.103) url(../props/angular.png);
-  background-position: center;
-  background-size: cover;
-}
-.qualifications-container .qualification .content.c-plus-plus {
-  background: rgba(255, 255, 255, 0.103) url(../props/sol.png);
-  background-position: center;
-  background-size: cover;
-}
-.qualifications-container .qualification .content.c-sharp {
-  background: rgba(255, 255, 255, 0.103) url(../props/w3.png);
-  background-position: center;
-  background-size: cover;
-}
-.qualifications-container .qualification .content.kotlin {
-  background: rgba(255, 255, 255, 0.103) url(../props/ethers.png);
-  background-position: center;
-  background-size: cover;
-}
-
-@media (max-width: 420px) {
-  .quali-text {
-    font-size: 20px;
-    top: 10px;
-    text-align: center;
-  }
-
-  .qualifications-container {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 80%;
-    width: 88%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin-top: 40px;
-  }
-
-  .qualifications-container .qualification {
-    position: relative;
-    height: 80%;
-    min-width: 98%;
-    background-color: rgb(9, 6, 31);
-    border-radius: 20px;
-    margin: 0 40px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .qualifications-container .qualification .content {
-    height: 85%;
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .qualifications-container .qualification h1 {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-weight: 200;
-  }
-}
-
-@media (max-width: 375px) {
-  .quali-text {
-    font-size: 20px;
-    top: 10px;
-    position: absolute;
-    left: 10px;
-  }
-
-  .qualifications-container {
-    position: absolute;
-    left: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 80%;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-
-  .qualifications-container .qualification {
-    position: relative;
-    height: 95%;
-    min-width: 90%;
-    background-color: rgb(9, 6, 31);
-    border-radius: 20px;
-    margin: 0 20px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .qualifications-container .qualification .content {
-    height: 85%;
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .qualifications-container .qualification h1 {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-weight: 200;
-  }
+.slick-dots  button:before {
+    font-size: 12px !important;
+    color:White !important;
 }

@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom';
 import './style.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import WebContent from './app';
 
 ReactDOM.render(<WebContent />, document.getElementById('root'));

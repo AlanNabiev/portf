@@ -1,6 +1,7 @@
 import './home.css';
 import img from '../props/img2.png';
 import { BsMouse } from 'react-icons/bs';
+import {GiClick} from 'react-icons/gi'
 
 function Home() {
   return (
@@ -18,6 +19,10 @@ function Home() {
         </div>
 
         <img src={img} alt='' />
+        <div className="click">
+        Touch
+        <GiClick  />
+        </div>
       </div>
 
       <a href='#footer' className='scroll-down'>

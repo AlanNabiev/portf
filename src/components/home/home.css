@@ -1,3 +1,17 @@
+.click {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  opacity: 0.35;
+  margin-bottom: 125px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transform: translate(-200px);
+  opacity: 0;
+  animation: fade-in-icon 1s ease 1 0.5s forwards;
+
+}
 .home-container {
   position: relative;
   min-height: 100vh;
@@ -61,7 +75,7 @@
 }
 
 .home-container .logo .hover-show.active .circle:nth-child(1) {
-  background: url(../props/js.png);
+  background: url(../props/c-js.png);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -70,49 +84,49 @@
 .home-container .logo .hover-show.active .circle:nth-child(2) {
   position: absolute;
   transform: translateX(150%) translateY(-150%);
-  background: url(../props/node.png);
+  background: url(../props/c-node.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(3) {
   position: absolute;
   transform: translateX(230%);
-  background: url(../props/vue.png);
+  background: url(../props/c-vue.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(4) {
   position: absolute;
   transform: translateX(150%) translateY(150%);
-  background: url(../props/angular.png);
+  background: url(../props/c-angular.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(5) {
   position: absolute;
   transform: translateY(230%);
-  background: url(../props/react.png);
+  background: url(../props/c-react.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(6) {
   position: absolute;
   transform: translateX(-150%) translateY(150%);
-  background: url(../props/w3.png);
+  background: url(../props/c-w3.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(7) {
   position: absolute;
   transform: translateX(-230%);
-  background: url(../props/ethers.png);
+  background: url(../props/c-ethers.png);
   background-size: cover;
   background-position: center;
 }
 .home-container .logo .hover-show.active .circle:nth-child(8) {
   position: absolute;
   transform: translateX(-150%) translateY(-150%);
-  background: url(../props/sol.png);
+  background: url(../props/c-sol.png);
   background-size: cover;
   background-position: center;
 }
@@ -132,7 +146,12 @@
     opacity: 1;
   }
 }
-
+@keyframes fade-in-icon {
+  to {
+    transform: translate(0);
+    opacity: 0.35;
+  }
+}
 .scroll-down {
   transform: rotate(90deg);
   position: absolute;
@@ -219,6 +238,11 @@
     opacity: 0;
     animation: fade-in 1s ease 1 0.5s forwards;
   }
+  .click{
+    margin-bottom: 75px;
+    font-size: 20px;
+
+  }
 }
 
 @media (max-width: 500px) {
@@ -292,6 +316,11 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+  }
+  .click{
+    margin-bottom: 55px;
+    font-size: 20px;
+
   }
 }
 
